@@ -205,7 +205,7 @@ const Main = () => {
                     </div>
 
                     <div style={{ margin: '0', backgroundColor: 'white', height: '140px', borderRadius: '10px', marginTop: '10px', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.3)', border: '1px solid gray' }}>
-                        <h4 style={{ margin: '20px 0 5px 20px', padding: '20px 0 0 0' }}>
+                        <h4 style={{ margin: '20px 0 5px 20px', padding: '5px 0 0 0' }}>
                             PAYMENT
                         </h4>
 
