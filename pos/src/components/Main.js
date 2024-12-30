@@ -115,7 +115,7 @@ const Main = () => {
     return (
         <div className={style.container}>
 
-            <div style={{ display: 'flex', width: '80%', margin: '0 auto', padding: '20px', gap: '10px' }}>
+            <div style={{ display: 'flex', width: '100%', margin: '0 auto', padding: '20px', gap: '10px' }}>
 
                 <div style={{ padding: '20px 0 0 0', borderRadius: '10px', width: '100%', border: '1px solid gray', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.3)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', margin: '0 0 20px 0' }}>
