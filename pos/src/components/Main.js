@@ -115,9 +115,9 @@ const Main = () => {
     return (
         <div className={style.container}>
 
-            <div style={{ display: 'flex', width: '90%', margin: '0 auto', padding: '20px', gap: '30px', height: '700px' }}>
+            <div style={{ display: 'flex', width: '90%', margin: '0 auto', padding: '20px', gap: '30px', height: '700px', }}>
 
-                <div style={{ padding: '20px 0 0 0', borderRadius: '10px', width: '100%', border: '1px solid gray', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.3)' }}>
+                <div className={style.itemsContainer} style={{ padding: '20px 0 0 0', borderRadius: '10px', width: '100%', border: '1px solid gray', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.3)',overflowY: 'hidden' }}>
                     <div style={{ display: 'flex', alignItems: 'center', margin: '0 0 20px 0' }}>
                         <input type='text' value={search} onChange={(e) => setSearch(e.target.value)} placeholder='Search Item'
                             style={{ height: '35px', width: '240px', borderRadius: '5px', padding: '5px', margin: '0 20px 0 30px' }} />
