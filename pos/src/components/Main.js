@@ -115,12 +115,12 @@ const Main = () => {
     return (
         <div className={style.container}>
 
-            <div style={{ display: 'flex', width: '80%', margin: '0 auto', padding: '20px', gap: '10px' }}>
+            <div style={{ display: 'flex', width: '80%', margin: '0 auto', padding: '20px', gap: '30px',height:'750px' }}>
 
                 <div style={{ padding: '20px 0 0 0', borderRadius: '10px', width: '100%', border: '1px solid gray', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.3)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', margin: '0 0 20px 0' }}>
                         <input type='text' value={search} onChange={(e) => setSearch(e.target.value)} placeholder='Search Item'
-                            style={{ height: '30px', width: '240px', borderRadius: '5px', padding: '5px', margin: '0 20px 0 30px' }} />
+                            style={{ height: '35px', width: '240px', borderRadius: '5px', padding: '5px', margin: '0 20px 0 30px' }} />
                         <button style={{ height: '40px', width: '40px', borderRadius: '50%', margin: '0' }} onClick={() => searchItem()}>
                             <IoSearch size={20} color='green' />
                         </button>
@@ -147,7 +147,7 @@ const Main = () => {
 
                 <div>
                     <div className={style.sale}>
-                        <h3 style={{ margin: '0', color: 'black', textAlign: 'center' }}>Checkout</h3>
+                        <h3 style={{ margin: '10px 0 0 0', color: 'black', textAlign: 'center' }}>Checkout</h3>
                         <table className={style.styledTable}>
                             <thead>
                                 <tr>
@@ -161,22 +161,23 @@ const Main = () => {
 
                                     <tr key={item.id}>
 
-                                        <td style={{ width: '150px', display: 'flex', alignItems: 'center' }}>
-                                            <div onClick={() => deleteSelectedItem(item)}>
-                                                <MdDeleteOutline size={24} />
+                                        <td >
+                                            <div style={{ width: '150px', display: 'flex', alignItems: 'center' }} onClick={() => deleteSelectedItem(item)}>
+                                                <MdDeleteOutline size={24} color='#009879'/>
+                                                <p>{item.name}</p>
                                             </div>
-                                            <p>{item.name}</p>
+                                           
                                         </td>
                                         <td style={{ width: '120px' }}>
                                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', gap: '30px', position: 'relative' }}>
                                                 <div
                                                     style={{
                                                         display: 'flex', justifyContent: 'center', alignItems: 'center', width: '25px', height: '25px', cursor: 'pointer',
-                                                        borderRadius: '50%', border: '2px solid green', position: 'absolute', left: '5px'
+                                                        borderRadius: '50%', border: '2px solid #009879', position: 'absolute', left: '5px'
                                                     }}
                                                     onClick={() => handleMinusQuantity(item)}
                                                 >
-                                                    <HiMiniMinusSmall />
+                                                    <HiMiniMinusSmall color='#009879' />
                                                 </div>
 
                                                 <p style={{ margin: '0 ', width: 'auto' }}>{item.qty}</p>
@@ -184,11 +185,11 @@ const Main = () => {
                                                 <div
                                                     style={{
                                                         display: 'flex', justifyContent: 'center', alignItems: 'center', width: '25px',
-                                                        height: '25px', cursor: 'pointer', borderRadius: '50%', border: '2px solid green', position: 'absolute', right: '5px', margin: '0'
+                                                        height: '25px', cursor: 'pointer', borderRadius: '50%', border: '2px solid #009879', position: 'absolute', right: '5px', margin: '0'
                                                     }}
                                                     onClick={() => handleAddQuantity(item.id)}
                                                 >
-                                                    <GoPlus color='green' />
+                                                    <GoPlus color='#009879' />
                                                 </div>
                                             </div>
                                         </td>
@@ -203,7 +204,7 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div style={{ margin: '0', backgroundColor: 'white', height: '150px', borderRadius: '10px', marginTop: '5px', }}>
+                    <div style={{ margin: '0', backgroundColor: 'white', height: '130px', borderRadius: '10px', marginTop: '5px', }}>
                         <h4 style={{ margin: '20px 0 5px 20px', padding: '20px 0 0 0' }}>
                             PAYMENT
                         </h4>
@@ -211,7 +212,7 @@ const Main = () => {
                         <div style={{ display: 'flex', justifyContent: 'space-between', }}>
                             <input type='number' placeholder='Enter Amount' value={payment} onChange={(e) => setPayment(e.target.value)}
                                 style={{ height: '40px', width: '150px', textAlign: 'center', fontSize: '20px', fontWeight: 'bold', margin: '0 0 0 20px' }} />
-                            <button style={{ width: '100px', height: '45px', padding: '5px', fontSize: '20px', fontWeight: 'bold', margin: '0 20px 0 0', backgroundColor: '#009879', color: 'white' }} onClick={() => calculate()}>PAY</button>
+                            <button style={{ width: '100px', height: '40px', padding: '5px', fontSize: '20px', fontWeight: 'bold', margin: '0 20px 0 0', backgroundColor: '#009879', color: 'white' }} onClick={() => calculate()}>PAY</button>
                         </div>
                         {change > 0 ? (<h3 style={{ margin: '5px 0 5px 20px' }}>CHANGE: {change}</h3>) : ''}
                     </div>
