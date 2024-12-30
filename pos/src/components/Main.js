@@ -211,10 +211,10 @@ const Main = () => {
 
                         <div style={{ display: 'flex', justifyContent: 'space-between', }}>
                             <input type='number' placeholder='Enter Amount' value={payment} onChange={(e) => setPayment(e.target.value)}
-                                style={{ height: '40px', width: '150px', textAlign: 'center', fontSize: '20px', fontWeight: 'bold', margin: '0 0 0 20px' }} />
+                                style={{ height: '40px', width: '150px', textAlign: 'center', fontSize: '18px', fontWeight: 'bold', margin: '0 0 0 20px' }} />
                             <button style={{ width: '100px', height: '40px', padding: '5px', fontSize: '20px', fontWeight: 'bold', margin: '0 20px 0 0', backgroundColor: '#009879', color: 'white' }} onClick={() => calculate()}>PAY</button>
                         </div>
-                        {change > 0 ? (<h3 style={{ margin: '5px 0 5px 20px' }}>CHANGE: {change}</h3>) : ''}
+                        <h4 style={{ margin: '5px 0 5px 20px' }}>CHANGE: {change}</h4>
                     </div>
                 </div>
             </div>
