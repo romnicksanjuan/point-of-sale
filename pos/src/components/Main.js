@@ -115,7 +115,7 @@ const Main = () => {
     return (
         <div className={style.container}>
 
-            <div style={{ display: 'flex', width: '80%', margin: '0 auto', padding: '20px', gap: '30px',height:'750px' }}>
+            <div style={{ display: 'flex', width: '90%', margin: '0 auto', padding: '20px', gap: '30px', height: '700px' }}>
 
                 <div style={{ padding: '20px 0 0 0', borderRadius: '10px', width: '100%', border: '1px solid gray', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.3)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', margin: '0 0 20px 0' }}>
@@ -163,10 +163,10 @@ const Main = () => {
 
                                         <td >
                                             <div style={{ width: '150px', display: 'flex', alignItems: 'center' }} onClick={() => deleteSelectedItem(item)}>
-                                                <MdDeleteOutline size={24} color='#009879'/>
+                                                <MdDeleteOutline size={24} color='#009879' />
                                                 <p>{item.name}</p>
                                             </div>
-                                           
+
                                         </td>
                                         <td style={{ width: '120px' }}>
                                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', gap: '30px', position: 'relative' }}>
@@ -204,7 +204,7 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div style={{ margin: '0', backgroundColor: 'white', height: '130px', borderRadius: '10px', marginTop: '5px', }}>
+                    <div style={{ margin: '0', backgroundColor: 'white', height: '140px', borderRadius: '10px', marginTop: '10px', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.3)', border: '1px solid gray' }}>
                         <h4 style={{ margin: '20px 0 5px 20px', padding: '20px 0 0 0' }}>
                             PAYMENT
                         </h4>

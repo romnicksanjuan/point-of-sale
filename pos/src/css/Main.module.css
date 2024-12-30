@@ -8,6 +8,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #009879;
 }
 
@@ -59,7 +60,7 @@
 
 .sale {
     width: 350px;
-    height: 550px;
+    height: 510px;
     background-color: rgb(255, 255, 255);
     border: 1px solid gray;
     position: relative;
