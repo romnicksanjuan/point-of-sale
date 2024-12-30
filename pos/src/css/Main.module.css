@@ -39,7 +39,7 @@
   }
 
 .subContainer::-webkit-scrollbar-thumb {
-    background: #888; /* Dark grey color */
+    background: #01b18e; /* Dark grey color */
     border-radius: 10px;
   }
 
